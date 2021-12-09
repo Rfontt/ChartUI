@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    background-color: #f3f3f3;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.search-user-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-user-div .input {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-user-div .input span {
+    color: black;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.search-user-div .input input {
+   width: 40rem;
+   height: 2rem;
+}
+
+.search-user-div .search {
+    padding: 5px;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.search-user-div .search i {
+    font-size: 20px;
+}
+
+.chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+canvas {
+    border: 1px solid gainsboro;
+    background: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.datasUser {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.datasUser img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.nameAndBio {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.datasUser .nameAndBio p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.datasUser .nameAndBio span {
+    font-family: 'Righteous', cursive;
+    color: gray;
+}
+
+.image-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-logo img {
+    width: 30rem;
+    margin-top: 5rem;
+}
+
+.image-404 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image-404 img {
+    width: 50rem;
+    height: 20rem;
+    margin: 2rem;
+}
+
+.return {
+    margin: 10px;
+    cursor: pointer;
+}

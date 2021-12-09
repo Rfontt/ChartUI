@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>Chart-Github</title>
+</head>
+<body>
+    <div class="container">
+        <form class="search-user-div">
+            <div class="input">
+                <span>Procure por usuários:</span>
+                <input type="text" class="search-user-input">
+            </div>
+            
+            <button class="search">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+
+        <div class="image-logo"></div>
+
+        <div class="image-404"></div>
+
+        <div class="return"></div>
+
+        <div class="datasUser"></div>
+
+        <div class="chart">
+            <canvas id="myChart" width="800rem" height="500"></canvas>
+        </div>
+    </div>
+
+    <script src="./node_modules/chart.js/dist/chart.js"></script>
+    <script src="./scripts/chart.js"></script>
+</body>
+</html>
