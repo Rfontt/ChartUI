@@ -45,29 +45,31 @@
             qtdRepositories = datasUser.public_repos;
             followers = datasUser.followers;
             following = datasUser.following;
-        }  
 
-        if (datasUser.hasOwnProperty('login')) {
-            returnIndex.innerHTML = `
-                <a href="./index.html">
-                    <i class="fas fa-arrow-left" id="icon-return"></i>
-                </a>
-            `;
-
-            datasUserClass.innerHTML = `
-                <img class="userImage" src=${datasUser.avatar_url} alt="User image">
-                <div class="nameAndBio">
-                    <p>${datasUser.login}</p>
-                    <span>${datasUser.bio}</span>
-                </div>
-            `
-        } else {
-            ctx.style.display = 'none';
-
-            image404.innerHTML = `
-                <img src="../assets/undraw_page_not_found_re_e9o6.svg" alt="">
-                <a href="./index.html">Voltar</a>
-            `
+            if (datasUser.hasOwnProperty('login')) {
+                returnIndex.innerHTML = `
+                    <a href="./index.html">
+                        <i class="fas fa-arrow-left" id="icon-return"></i>
+                    </a>
+                `;
+    
+                datasUserClass.innerHTML = `
+                    <img class="userImage" src=${datasUser.avatar_url} alt="User image">
+                    <div class="nameAndBio">
+                        <p>${datasUser.login}</p>
+                        <span>${datasUser.bio}</span>
+                    </div>
+                `
+            } else {
+                ctx.style.display = 'none';
+    
+                image404.innerHTML = `
+                    <img src="../assets/undraw_page_not_found_re_e9o6.svg" alt="">
+                    <a href="./index.html">Voltar</a>
+                `
+            }
+        }  else {
+            alert('Preencha todos os campos!')
         }
 
         const options = {
